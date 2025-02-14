@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scratch Card Surprise</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <div class="scratch-card-container">
+        <h2 id="reward-text">🎁 You have won a reward, scratch to redeem it! 🎉</h2>
+        <div class="scratch-area">
+            <canvas id="scratch-card"></canvas>
+            <div id="revealed-message" class="hidden">
+                <p> मी गुलाब,तू काटा. 
+                    तू दारू, मी अड्डा.
+                    मी शनी, तू साडेसाती.
+                    जुळतील का आपली नाती?</p>
+                <button id="collect-btn">हो</button>
+                <button id="collect-btn">नाही</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="animation-container" class="hidden">
+        <div class="rose-animation">
+            <!-- Correct image source -->
+            <img src="pexels-jonaskakaroto-736230.jpg" alt="Rose" id="rose-img">
+        </div>
+        <p id="happy-vday-msg">Here is a Phool for a fool! </p>
+    </div>
+    
+    <script src="game.js"></script>
+</body>
+</html>
